@@ -72,6 +72,7 @@ lib/main.dart: Entry point with Firebase initialization.
 <img width="389" height="796" alt="image" src="https://github.com/user-attachments/assets/e3b186ba-e993-4f3b-bb8b-e076287fe48f" />
 
 <img width="397" height="813" alt="image" src="https://github.com/user-attachments/assets/66e1436c-708e-4296-a2a7-0831f157e339" />
+<img width="395" height="803" alt="image" src="https://github.com/user-attachments/assets/60e771cb-ca0d-4772-93b2-63ac5f8a3ddd" />
 
 <img width="400" height="805" alt="image" src="https://github.com/user-attachments/assets/425473eb-b31d-44ed-8d4d-a2cdf43211f0" />
 
