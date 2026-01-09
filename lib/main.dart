@@ -11,19 +11,20 @@ import 'providers/auth_provider.dart'; // Add this
 import 'firebase_options.dart'; // Add this line
 
 void main() async {
-  // 1. You MUST have this line first
+  // 1. Tell Flutter to wait for the engine to boot up
   WidgetsFlutterBinding.ensureInitialized();
 
-  // 2. You MUST await the initialization
   try {
-   await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
-);
+    // 2. Initialize Firebase using the file you generated earlier
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    print("Firebase is Ready!");
   } catch (e) {
-    print("Firebase initialization failed: $e");
+    print("Firebase Error: $e");
   }
 
-  // 3. Only then do you run the app
+  // 3. ONLY run the app after the 'await' above is finished
   runApp(
     MultiProvider(
       providers: [
@@ -34,7 +35,6 @@ void main() async {
     ),
   );
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
